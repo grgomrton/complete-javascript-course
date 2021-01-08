@@ -54,7 +54,7 @@ console.log('x', x, 'y', y);
 const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
 */
-
+/*
 const firstName = 'Jonas';
 const job = 'teacher';
 const birthYear = 1991;
@@ -76,5 +76,25 @@ lines with spaces`);
 
 console.log(`multiline string with
              whitespaces`); // whitespaces are included in the string
+*/
+
+const age = 15;
+
+if (age >= 18) {
+  console.log('Sarah can start acquring driving license 🚗');
+} else {
+  const yearsLeft = 18 - age;
+  console.log(`Still need to wait ${yearsLeft} years ⏰`);
+}
+
+const birthYear = 2012;
+
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
 
 console.log(" ");
