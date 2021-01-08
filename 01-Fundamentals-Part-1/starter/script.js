@@ -1,4 +1,3 @@
-console.log("# Video practice");
 /*
 let js = 'amazing';
 console.log(40 + 8 + 23 - 10);
@@ -40,6 +39,7 @@ console.log(ageJonas > ageSarah);
 console.log(currentYear - 1991 > currentYear - 2018);
 */
 
+/*
 const currentYear = 2037;
 const jonasBirthYear = 1991;
 const sarahBirthYear = 2018;
@@ -53,5 +53,28 @@ console.log('x', x, 'y', y);
 
 const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
+*/
+
+const firstName = 'Jonas';
+const job = 'teacher';
+const birthYear = 1991;
+const year = 2037;
+
+const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + ' years old ' + job;
+console.log(jonas);
+
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}`;
+console.log(jonasNew);
+
+console.log('String with \n\
+multiple \n\
+lines');
+
+console.log(`Another string with
+multiple
+lines with spaces`);
+
+console.log(`multiline string with
+             whitespaces`); // whitespaces are included in the string
 
 console.log(" ");
