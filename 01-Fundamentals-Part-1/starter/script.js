@@ -1,3 +1,4 @@
+console.log("# Video practice");
 /*
 let js = 'amazing';
 console.log(40 + 8 + 23 - 10);
@@ -11,6 +12,7 @@ console.log(firstName);
 console.log(firstName);
 */
 
+/*
 // Mathetmatical operators
 const currentYear = 2037;
 const jonasBirthYear = 1991;
@@ -36,3 +38,20 @@ console.log(x);
 console.log(ageJonas > ageSarah);
 
 console.log(currentYear - 1991 > currentYear - 2018);
+*/
+
+const currentYear = 2037;
+const jonasBirthYear = 1991;
+const sarahBirthYear = 2018;
+const ageJonas = currentYear - jonasBirthYear;
+const ageSarah = currentYear - sarahBirthYear;
+console.log(currentYear - 1991 > currentYear - 2018);
+
+let x, y;
+x = y = 25 - 10 - 5;
+console.log('x', x, 'y', y);
+
+const averageAge = (ageJonas + ageSarah) / 2;
+console.log(ageJonas, ageSarah, averageAge);
+
+console.log(" ");
