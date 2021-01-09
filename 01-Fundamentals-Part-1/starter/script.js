@@ -97,7 +97,7 @@ if (birthYear <= 2000) {
 }
 console.log(century);
 */
-
+/*
 // type conversion
 const inputYear = '1991';
 console.log(Number(inputYear), inputYear);
@@ -114,6 +114,13 @@ console.log('I am ' + 23 + ' years old');
 console.log('23' - '10' - 3); // 10 : operator - converts to numbers
 console.log('23' / '2');      // division converts to number as well
 console.log('23' > '18');     // also greater than converts to number
+*/
 
+let height = 0;
+if (height) {
+  console.log('YAY! Height is defined');
+} else {
+  console.log('Height is undefined');
+}
 
 console.log(" ");
