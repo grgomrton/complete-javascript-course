@@ -39,3 +39,10 @@ if (population > 33) {
 } else {
   console.log(`${country}'s population is ${33 - population} million below average`);
 }
+
+// type conversion, coercion
+console.log('9' - '5'); // will be 4
+console.log('19' - '13' + '17'); // will be 617
+console.log('19' - '13' + 17); // will be 23
+console.log('123' < 57); // will be false
+console.log(5 + 6 + '4' + 9 - 4 - 2); // will be 1143
