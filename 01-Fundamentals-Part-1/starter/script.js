@@ -77,7 +77,7 @@ lines with spaces`);
 console.log(`multiline string with
              whitespaces`); // whitespaces are included in the string
 */
-
+/*
 const age = 15;
 
 if (age >= 18) {
@@ -96,5 +96,24 @@ if (birthYear <= 2000) {
   century = 21;
 }
 console.log(century);
+*/
+
+// type conversion
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Jonas')); // NaN
+console.log(typeof NaN);      // number
+console.log(10 > NaN);        // false - also 10 < NaN
+
+console.log(String(23), 23);
+
+// type coercion
+console.log('I am ' + 23 + ' years old');
+console.log('23' - '10' - 3); // 10 : operator - converts to numbers
+console.log('23' / '2');      // division converts to number as well
+console.log('23' > '18');     // also greater than converts to number
+
 
 console.log(" ");
