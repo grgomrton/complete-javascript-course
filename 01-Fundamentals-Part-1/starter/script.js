@@ -115,12 +115,27 @@ console.log('23' - '10' - 3); // 10 : operator - converts to numbers
 console.log('23' / '2');      // division converts to number as well
 console.log('23' > '18');     // also greater than converts to number
 */
-
+/*
 let height = 0;
 if (height) {
   console.log('YAY! Height is defined');
 } else {
   console.log('Height is undefined');
 }
+*/
+const favourite = Number(prompt("What is your favourite number?"));
+
+if (favourite === 23) {
+  console.log("Cool! 23 is a great number!");
+} else if (favourite === 7) {
+  console.log("7 is also a cool number");
+} else {
+  console.log("Number is not 23 or 7");
+}
+
+if (favourite !== 23) {
+  console.log("Why not 23?");
+}
+
 
 console.log(" ");
