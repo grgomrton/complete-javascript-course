@@ -137,7 +137,7 @@ if (favourite === 23) {
 if (favourite !== 23) {
   console.log("Why not 23?");
 }*/
-
+/*
 const day = 'wednesday';
 
 if (day === 'monday') {
@@ -152,6 +152,7 @@ if (day === 'monday') {
   console.log('Enjoy the weekend');
 } else {
   console.log('Invalid day');
-}
+}*/
 
-console.log(" ");
+const age = 23;
+console.log(`I like to drink ${age >= 18 ? 'wine 🍷' : 'water 💧'}`);
