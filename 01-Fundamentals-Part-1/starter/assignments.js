@@ -57,12 +57,37 @@
 //   console.log('No borders');
 // }
 
-const englishSpeaking = false;
-const population = 10;
-const isIsland = false;
+// const englishSpeaking = false;
+// const population = 10;
+// const isIsland = false;
 
-if (englishSpeaking && (population < 50) && !isIsland) {
-  console.log('You should live in Hungary!');
-} else {
-  console.log('Hungary does not meet your criteria.');
+// if (englishSpeaking && (population < 50) && !isIsland) {
+//   console.log('You should live in Hungary!');
+// } else {
+//   console.log('Hungary does not meet your criteria.');
+// }
+
+// swich statement
+const language = 'english';
+
+switch (language) {
+  case 'english':
+    console.log('3rd place');
+    break;
+  case 'chinese':
+  case 'mandarin':
+    console.log('MOST number of native speakers');
+    break;
+  case 'spanish':
+    console.log('2nd place in number of native speakers');
+    break;
+  case 'hindi':
+    console.log('Number 4');
+    break;
+  case 'arabic':
+    console.log('5th most spoken language');
+    break;
+  default:
+    console.log('Great language too!');
+    break;
 }

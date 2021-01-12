@@ -123,6 +123,7 @@ if (height) {
   console.log('Height is undefined');
 }
 */
+/*
 const favourite = Number(prompt("What is your favourite number?"));
 
 if (favourite === 23) {
@@ -135,7 +136,22 @@ if (favourite === 23) {
 
 if (favourite !== 23) {
   console.log("Why not 23?");
-}
+}*/
 
+const day = 'wednesday';
+
+if (day === 'monday') {
+  console.log('Plan course structure');
+} else if (day === 'tuesday') {
+  console.log('Prepare theory videos');
+} else if (day === 'wednesday' || day === 'thursday') {
+  console.log('Write code examples');
+} else if (day === 'friday') {
+  console.log('Record videos');
+} else if (day === 'saturday' || day === 'sunday') {
+  console.log('Enjoy the weekend');
+} else {
+  console.log('Invalid day');
+}
 
 console.log(" ");
