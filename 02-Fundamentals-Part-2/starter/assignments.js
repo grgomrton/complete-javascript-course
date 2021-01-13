@@ -30,3 +30,8 @@ const percentageOfWorld2 = function (population) {
 console.log('Austria', percentageOfWorld2(austriaPopulation));
 console.log('Hungary', percentageOfWorld2(hungaryPopulation));
 console.log('USA', percentageOfWorld2(usaPopulation));
+
+const percentageOfWorld3 = population => population / entirePopulation * 100;
+console.log('Austria', percentageOfWorld3(austriaPopulation));
+console.log('Hungary', percentageOfWorld3(hungaryPopulation));
+console.log('USA', percentageOfWorld3(usaPopulation));
