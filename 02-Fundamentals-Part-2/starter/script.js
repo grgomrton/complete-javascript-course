@@ -65,17 +65,42 @@
 // console.log(yearsUntilRetirement(1991, 'Jonas'));
 // console.log(yearsUntilRetirement(1980, 'Bob'));
 
-// function calls from other functions
-function cutFruitPieces(fruit) {
-  return fruit * 4;
-}
+// // function calls from other functions
+// function cutFruitPieces(fruit) {
+//   return fruit * 4;
+// }
 
-function fruitProcessor(apples, oranges) {
-  const applePieces = cutFruitPieces(apples);
-  const orangePieces = cutFruitPieces(oranges);
+// function fruitProcessor(apples, oranges) {
+//   const applePieces = cutFruitPieces(apples);
+//   const orangePieces = cutFruitPieces(oranges);
 
-  const juice = `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange`;
-  return juice;
-}
+//   const juice = `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange`;
+//   return juice;
+// }
 
-console.log(fruitProcessor(2, 3));
+// console.log(fruitProcessor(2, 3));
+
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+
+const years = new Array(1991, 1984, 2008, 2020);
+
+console.log(friends.length);
+console.log(friends[0]);
+console.log(friends[2]);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'Jay';
+console.log(friends);
+
+const firstName = 'Jonas';
+const jonas = [firstName, 'Schmedtmann', 2037 - 1991, friends];
+console.log(jonas);
+
+// Exercise
+const calcAge = (birthYear) => 2037 - birthYear;
+
+const birthYears = [1990, 1967, 2002, 2010, 2018];
+
+const ages = birthYears.map((year) => calcAge(year));
+console.log(ages);

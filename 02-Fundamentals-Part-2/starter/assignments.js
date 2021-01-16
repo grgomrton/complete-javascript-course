@@ -36,16 +36,30 @@
 // console.log('Hungary', percentageOfWorld3(hungaryPopulation));
 // console.log('USA', percentageOfWorld3(usaPopulation));
 
-// function calls from other functions
+// // function calls from other functions
+// const entirePopulation = 7900;
+// function percentageOfWorld1(population) {
+//   return population / entirePopulation * 100;
+// }
+
+// const describePopulation = (country, population) => {
+//   `${country} has ${population} million people, which is about ${percentageOfWorld1(population)}% of the world.`
+// }
+
+// console.log('Austria', percentageOfWorld1(9));
+// console.log('Hungary', percentageOfWorld1(10));
+// console.log('USA', percentageOfWorld1(328));
+
 const entirePopulation = 7900;
-function percentageOfWorld1(population) {
+function percentageOfWorld(population) {
   return population / entirePopulation * 100;
 }
+const austriaPopulation = 9;
+const hungaryPopulation = 10;
+const usaPopulation = 328;
+const germanyPopulation = 83;
+const populations = [austriaPopulation, hungaryPopulation, usaPopulation, germanyPopulation];
+console.log(populations.length === 4);
 
-const describePopulation = (country, population) => {
-  `${country} has ${population} million people, which is about ${percentageOfWorld1(population)}% of the world.`
-}
-
-console.log('Austria', percentageOfWorld1(9));
-console.log('Hungary', percentageOfWorld1(10));
-console.log('USA', percentageOfWorld1(328));
+const percentages = [percentageOfWorld(austriaPopulation), percentageOfWorld(hungaryPopulation), percentageOfWorld(usaPopulation), percentageOfWorld(germanyPopulation)];
+console.log(percentages); 
