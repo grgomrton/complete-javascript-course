@@ -50,16 +50,27 @@
 // console.log('Hungary', percentageOfWorld1(10));
 // console.log('USA', percentageOfWorld1(328));
 
-const entirePopulation = 7900;
-function percentageOfWorld(population) {
-  return population / entirePopulation * 100;
-}
-const austriaPopulation = 9;
-const hungaryPopulation = 10;
-const usaPopulation = 328;
-const germanyPopulation = 83;
-const populations = [austriaPopulation, hungaryPopulation, usaPopulation, germanyPopulation];
-console.log(populations.length === 4);
+// const entirePopulation = 7900;
+// function percentageOfWorld(population) {
+//   return population / entirePopulation * 100;
+// }
+// const austriaPopulation = 9;
+// const hungaryPopulation = 10;
+// const usaPopulation = 328;
+// const germanyPopulation = 83;
+// const populations = [austriaPopulation, hungaryPopulation, usaPopulation, germanyPopulation];
+// console.log(populations.length === 4);
 
-const percentages = [percentageOfWorld(austriaPopulation), percentageOfWorld(hungaryPopulation), percentageOfWorld(usaPopulation), percentageOfWorld(germanyPopulation)];
-console.log(percentages); 
+// const percentages = [percentageOfWorld(austriaPopulation), percentageOfWorld(hungaryPopulation), percentageOfWorld(usaPopulation), percentageOfWorld(germanyPopulation)];
+// console.log(percentages); 
+
+const neighbours = ['Norway', 'Russia', 'Sweden'];
+neighbours.push('Utopia');
+neighbours.pop();
+if (!neighbours.includes('Germany')) {
+  console.log('Probably not a central European country');
+}
+if (neighbours.indexOf('Sweden') >= 0) {
+  neighbours[neighbours.indexOf('Sweden')] = 'Republic of Sweden';
+}
+console.log(neighbours);

@@ -80,27 +80,58 @@
 
 // console.log(fruitProcessor(2, 3));
 
+// const friends = ['Michael', 'Steven', 'Peter'];
+// console.log(friends);
+
+// const years = new Array(1991, 1984, 2008, 2020);
+
+// console.log(friends.length);
+// console.log(friends[0]);
+// console.log(friends[2]);
+// console.log(friends[friends.length - 1]);
+
+// friends[2] = 'Jay';
+// console.log(friends);
+
+// const firstName = 'Jonas';
+// const jonas = [firstName, 'Schmedtmann', 2037 - 1991, friends];
+// console.log(jonas);
+
+// // Exercise
+// const calcAge = (birthYear) => 2037 - birthYear;
+
+// const birthYears = [1990, 1967, 2002, 2010, 2018];
+
+// const ages = birthYears.map((year) => calcAge(year));
+// console.log(ages);
+
+// add elements
 const friends = ['Michael', 'Steven', 'Peter'];
+const newLength = friends.push('Jay');
+
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('John');
 console.log(friends);
 
-const years = new Array(1991, 1984, 2008, 2020);
+// remove elements
+friends.pop(); // removes the last element from the array
+const popped = friends.pop();
+console.log(friends);
+console.log(popped);
 
-console.log(friends.length);
-console.log(friends[0]);
-console.log(friends[2]);
-console.log(friends[friends.length - 1]);
-
-friends[2] = 'Jay';
+friends.shift(); // first
 console.log(friends);
 
-const firstName = 'Jonas';
-const jonas = [firstName, 'Schmedtmann', 2037 - 1991, friends];
-console.log(jonas);
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('Bob')); // -1
 
-// Exercise
-const calcAge = (birthYear) => 2037 - birthYear;
+friends.push(23);
+console.log(friends.includes('Steven')); // true
+console.log(friends.includes('Bob'));  // false
+console.log(friends.includes('23')); // false
 
-const birthYears = [1990, 1967, 2002, 2010, 2018];
-
-const ages = birthYears.map((year) => calcAge(year));
-console.log(ages);
+if (friends.includes('Stephen')) {
+  console.log('You have a friend called Stephen');
+}
