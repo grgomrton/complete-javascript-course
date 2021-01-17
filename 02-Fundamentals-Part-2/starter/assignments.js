@@ -64,13 +64,21 @@
 // const percentages = [percentageOfWorld(austriaPopulation), percentageOfWorld(hungaryPopulation), percentageOfWorld(usaPopulation), percentageOfWorld(germanyPopulation)];
 // console.log(percentages); 
 
-const neighbours = ['Norway', 'Russia', 'Sweden'];
-neighbours.push('Utopia');
-neighbours.pop();
-if (!neighbours.includes('Germany')) {
-  console.log('Probably not a central European country');
-}
-if (neighbours.indexOf('Sweden') >= 0) {
-  neighbours[neighbours.indexOf('Sweden')] = 'Republic of Sweden';
-}
-console.log(neighbours);
+// const neighbours = ['Norway', 'Russia', 'Sweden'];
+// neighbours.push('Utopia');
+// neighbours.pop();
+// if (!neighbours.includes('Germany')) {
+//   console.log('Probably not a central European country');
+// }
+// if (neighbours.indexOf('Sweden') >= 0) {
+//   neighbours[neighbours.indexOf('Sweden')] = 'Republic of Sweden';
+// }
+// console.log(neighbours);
+
+const myCountry = {
+  country: 'Hungary',
+  capital: 'Budapest',
+  language: 'hungarian',
+  population: 10
+};
+console.log(myCountry);
