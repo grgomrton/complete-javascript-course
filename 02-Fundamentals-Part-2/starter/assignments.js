@@ -79,6 +79,16 @@ const myCountry = {
   country: 'Hungary',
   capital: 'Budapest',
   language: 'hungarian',
-  population: 10
+  population: 10,
+  neigbourCount: 7
 };
 console.log(myCountry);
+
+const intro = (country) => `${country.country} has ${country.population} million ${country.language}-speaking people, ${country.neigbourCount} neighbouring country(ies) and a capital called ${country.capital}.`;
+
+console.log(intro(myCountry));
+
+myCountry.population += 2;
+console.log(myCountry.population);
+myCountry['population'] -= 2;
+console.log(myCountry.population);

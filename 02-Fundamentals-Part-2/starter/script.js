@@ -143,3 +143,28 @@ const jonas = {
   job: 'teacher',
   friends: ['Michael', 'Peter', 'Steven']
 };
+console.log(jonas);
+console.log(jonas.lastName);
+console.log(jonas['lastName']);
+
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+
+
+const interestedIn = prompt('What do you want to know about Jonas? Choose from firstName, lastName, age, job, friend');
+
+if (jonas[interestedIn] !== undefined) {
+  console.log(jonas[interestedIn]);
+} else {
+  console.log('Wrong request. Choose from firstName, lastName, age, job, friend');
+}
+
+jonas.location = 'Portugal';
+jonas['twitter'] = '@jonasschmedtmann';
+console.log(jonas);
+
+// Challenge
+const introBuilder = (person) => `${person.firstName} has ${person.friends.length} friends, and his/her best friend is ${person.friends[0]}`;
+
+console.log(introBuilder(jonas));
