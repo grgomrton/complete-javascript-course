@@ -136,35 +136,72 @@
 //   console.log('You have a friend called Stephen');
 // }
 
+// const jonas = {
+//   firstName: 'Jonas',
+//   lastName: 'Schmedtmann',
+//   age: 2037 - 1991,
+//   job: 'teacher',
+//   friends: ['Michael', 'Peter', 'Steven']
+// };
+// console.log(jonas);
+// console.log(jonas.lastName);
+// console.log(jonas['lastName']);
+
+// const nameKey = 'Name';
+// console.log(jonas['first' + nameKey]);
+// console.log(jonas['last' + nameKey]);
+
+
+// const interestedIn = prompt('What do you want to know about Jonas? Choose from firstName, lastName, age, job, friend');
+
+// if (jonas[interestedIn] !== undefined) {
+//   console.log(jonas[interestedIn]);
+// } else {
+//   console.log('Wrong request. Choose from firstName, lastName, age, job, friend');
+// }
+
+// jonas.location = 'Portugal';
+// jonas['twitter'] = '@jonasschmedtmann';
+// console.log(jonas);
+
+// // Challenge
+// const introBuilder = (person) => `${person.firstName} has ${person.friends.length} friends, and his/her best friend is ${person.friends[0]}`;
+
+// console.log(introBuilder(jonas));
+
 const jonas = {
   firstName: 'Jonas',
   lastName: 'Schmedtmann',
-  age: 2037 - 1991,
+  birthYear: 1991,
   job: 'teacher',
-  friends: ['Michael', 'Peter', 'Steven']
+  friends: ['Michael', 'Peter', 'Steven'],
+  hasDriversLicence: true,
+
+  // calcAge: function (birthYear) {
+  //   return 2037 - birthYear;
+  // }
+
+  // calcAge: function () {
+  //   return 2037 - this.birthYear;
+  // }
+
+  calcAge: function () {
+    if (this.age === undefined) {
+      this.age = 2037 - this.birthYear;
+    }
+    return this.age;
+  },
+
+  intro: function () {
+    return `${this.firstName} is a ${this.calcAge()} years old ${this.job}, and he has ${this.hasDriversLicence ? 'a' : 'no'} driver's license`;
+  }
 };
-console.log(jonas);
-console.log(jonas.lastName);
-console.log(jonas['lastName']);
 
-const nameKey = 'Name';
-console.log(jonas['first' + nameKey]);
-console.log(jonas['last' + nameKey]);
+console.log(jonas.calcAge());
 
-
-const interestedIn = prompt('What do you want to know about Jonas? Choose from firstName, lastName, age, job, friend');
-
-if (jonas[interestedIn] !== undefined) {
-  console.log(jonas[interestedIn]);
-} else {
-  console.log('Wrong request. Choose from firstName, lastName, age, job, friend');
-}
-
-jonas.location = 'Portugal';
-jonas['twitter'] = '@jonasschmedtmann';
-console.log(jonas);
+console.log(jonas.calcAge());
+console.log(jonas.calcAge());
+// console.log(jonas['calcAge'](1991));
 
 // Challenge
-const introBuilder = (person) => `${person.firstName} has ${person.friends.length} friends, and his/her best friend is ${person.friends[0]}`;
-
-console.log(introBuilder(jonas));
+console.log(jonas.intro());

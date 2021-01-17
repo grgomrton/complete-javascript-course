@@ -80,7 +80,14 @@ const myCountry = {
   capital: 'Budapest',
   language: 'hungarian',
   population: 10,
-  neigbourCount: 7
+  neigbourCount: 7,
+  describe: function () {
+    console.log(`${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neigbourCount} neighbouring country(ies) and a capital called ${this.capital}.`)
+  },
+  isIsland: function () {
+    return this.neigbourCount >= 1 ? false : true;
+  }
+
 };
 console.log(myCountry);
 
@@ -92,3 +99,6 @@ myCountry.population += 2;
 console.log(myCountry.population);
 myCountry['population'] -= 2;
 console.log(myCountry.population);
+
+myCountry.describe();
+console.log(myCountry.isIsland());
