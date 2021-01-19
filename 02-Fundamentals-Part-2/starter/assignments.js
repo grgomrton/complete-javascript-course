@@ -75,30 +75,34 @@
 // }
 // console.log(neighbours);
 
-const myCountry = {
-  country: 'Hungary',
-  capital: 'Budapest',
-  language: 'hungarian',
-  population: 10,
-  neigbourCount: 7,
-  describe: function () {
-    console.log(`${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neigbourCount} neighbouring country(ies) and a capital called ${this.capital}.`)
-  },
-  isIsland: function () {
-    return this.neigbourCount >= 1 ? false : true;
-  }
+// const myCountry = {
+//   country: 'Hungary',
+//   capital: 'Budapest',
+//   language: 'hungarian',
+//   population: 10,
+//   neigbourCount: 7,
+//   describe: function () {
+//     console.log(`${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neigbourCount} neighbouring country(ies) and a capital called ${this.capital}.`)
+//   },
+//   isIsland: function () {
+//     return this.neigbourCount >= 1 ? false : true;
+//   }
 
-};
-console.log(myCountry);
+// };
+// console.log(myCountry);
 
-const intro = (country) => `${country.country} has ${country.population} million ${country.language}-speaking people, ${country.neigbourCount} neighbouring country(ies) and a capital called ${country.capital}.`;
+// const intro = (country) => `${country.country} has ${country.population} million ${country.language}-speaking people, ${country.neigbourCount} neighbouring country(ies) and a capital called ${country.capital}.`;
 
-console.log(intro(myCountry));
+// console.log(intro(myCountry));
 
-myCountry.population += 2;
-console.log(myCountry.population);
-myCountry['population'] -= 2;
-console.log(myCountry.population);
+// myCountry.population += 2;
+// console.log(myCountry.population);
+// myCountry['population'] -= 2;
+// console.log(myCountry.population);
 
-myCountry.describe();
-console.log(myCountry.isIsland());
+// myCountry.describe();
+// console.log(myCountry.isIsland());
+
+for (let voter = 0; voter < 50; voter++) {
+  console.log(`Voter number ${voter + 1} is currently voting`);
+}

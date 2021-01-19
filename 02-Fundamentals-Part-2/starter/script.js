@@ -169,39 +169,43 @@
 
 // console.log(introBuilder(jonas));
 
-const jonas = {
-  firstName: 'Jonas',
-  lastName: 'Schmedtmann',
-  birthYear: 1991,
-  job: 'teacher',
-  friends: ['Michael', 'Peter', 'Steven'],
-  hasDriversLicence: true,
+// const jonas = {
+//   firstName: 'Jonas',
+//   lastName: 'Schmedtmann',
+//   birthYear: 1991,
+//   job: 'teacher',
+//   friends: ['Michael', 'Peter', 'Steven'],
+//   hasDriversLicence: true,
 
-  // calcAge: function (birthYear) {
-  //   return 2037 - birthYear;
-  // }
+//   // calcAge: function (birthYear) {
+//   //   return 2037 - birthYear;
+//   // }
 
-  // calcAge: function () {
-  //   return 2037 - this.birthYear;
-  // }
+//   // calcAge: function () {
+//   //   return 2037 - this.birthYear;
+//   // }
 
-  calcAge: function () {
-    if (this.age === undefined) {
-      this.age = 2037 - this.birthYear;
-    }
-    return this.age;
-  },
+//   calcAge: function () {
+//     if (this.age === undefined) {
+//       this.age = 2037 - this.birthYear;
+//     }
+//     return this.age;
+//   },
 
-  intro: function () {
-    return `${this.firstName} is a ${this.calcAge()} years old ${this.job}, and he has ${this.hasDriversLicence ? 'a' : 'no'} driver's license`;
-  }
-};
+//   intro: function () {
+//     return `${this.firstName} is a ${this.calcAge()} years old ${this.job}, and he has ${this.hasDriversLicence ? 'a' : 'no'} driver's license`;
+//   }
+// };
 
-console.log(jonas.calcAge());
+// console.log(jonas.calcAge());
 
-console.log(jonas.calcAge());
-console.log(jonas.calcAge());
-// console.log(jonas['calcAge'](1991));
+// console.log(jonas.calcAge());
+// console.log(jonas.calcAge());
+// // console.log(jonas['calcAge'](1991));
 
-// Challenge
-console.log(jonas.intro());
+// // Challenge
+// console.log(jonas.intro());
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repetition ${rep}`);
+}
