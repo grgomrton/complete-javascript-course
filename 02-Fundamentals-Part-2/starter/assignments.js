@@ -107,25 +107,32 @@
 //   console.log(`Voter number ${voter + 1} is currently voting`);
 // }
 
-const austriaPopulation = 9;
-const hungaryPopulation = 10;
-const usaPopulation = 328;
-const germanyPopulation = 83;
-const populations = [austriaPopulation, hungaryPopulation, usaPopulation, germanyPopulation];
+// const austriaPopulation = 9;
+// const hungaryPopulation = 10;
+// const usaPopulation = 328;
+// const germanyPopulation = 83;
+// const populations = [austriaPopulation, hungaryPopulation, usaPopulation, germanyPopulation];
 
-const entirePopulation = 7900;
+// const entirePopulation = 7900;
 
-function percentageOfWorld1(population) {
-  return population / entirePopulation * 100;
+// function percentageOfWorld1(population) {
+//   return population / entirePopulation * 100;
+// }
+
+// const percentages2 = [];
+// for (let i = 0; i < populations.length; i++) {
+//   percentages2.push(percentageOfWorld1(populations[i]));
+// }
+
+// console.log(percentages2);
+
+
+// const percentages = [percentageOfWorld1(austriaPopulation), percentageOfWorld1(hungaryPopulation), percentageOfWorld1(usaPopulation), percentageOfWorld1(germanyPopulation)];
+// console.log(percentages); 
+
+const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
+for (let i = 0; i < listOfNeighbours.length; i++) {
+  for (let j = 0; j < listOfNeighbours[i].length; j++) {
+    console.log(`Neighbour: ${listOfNeighbours[i][j]}`);
+  }
 }
-
-const percentages2 = [];
-for (let i = 0; i < populations.length; i++) {
-  percentages2.push(percentageOfWorld1(populations[i]));
-}
-
-console.log(percentages2);
-
-
-const percentages = [percentageOfWorld1(austriaPopulation), percentageOfWorld1(hungaryPopulation), percentageOfWorld1(usaPopulation), percentageOfWorld1(germanyPopulation)];
-console.log(percentages); 
