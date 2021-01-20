@@ -249,22 +249,39 @@
 //   if (typeof jonas[i] === 'number') break;
 // }
 
-const jonas = [
-  'Jonas',
-  'Schmedtmann',
-  2037 - 1991,
-  'teacher',
-  ['Michael', 'Peter', 'Steven']
-];
+// const jonas = [
+//   'Jonas',
+//   'Schmedtmann',
+//   2037 - 1991,
+//   'teacher',
+//   ['Michael', 'Peter', 'Steven']
+// ];
 
-for (let i = jonas.length - 1; i >= 0; i--) {
-  console.log(i, jonas[i]);
+// for (let i = jonas.length - 1; i >= 0; i--) {
+//   console.log(i, jonas[i]);
+// }
+
+// for (let exercise = 1; exercise < 4; exercise++) {
+//   console.log(`--- Starting exercise ${exercise}`);
+
+//   for (let repetition = 1; repetition < 6; repetition++) {
+//     console.log(`Exercise no. ${exercise} repetition no. ${repetition}`);
+//   }
+// }
+
+// for (let repetition = 1; repetition <= 10; repetition++) {
+//   console.log(`Lifting weights repetition no. ${repetition}`);
+// }
+
+let repetition = 1;
+while (repetition <= 10) {
+  // console.log(`Lifting weights repetition no. ${repetition}`);
+  repetition++;
 }
 
-for (let exercise = 1; exercise < 4; exercise++) {
-  console.log(`--- Starting exercise ${exercise}`);
+let dice = Math.trunc(Math.random() * 6) + 1;
 
-  for (let repetition = 1; repetition < 6; repetition++) {
-    console.log(`Exercise no. ${exercise} repetition no. ${repetition}`);
-  }
+while (dice !== 6) {
+  console.log(`You rolled ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
 }
