@@ -18,19 +18,19 @@ document.querySelector('.btn.check').addEventListener('click', () => {
   const scoreBox = document.querySelector('.score');
   if (score > 0) {
     if (guess >= 1 && guess <= 20) {
-      if (guess > secretNumber) {
-        messageBox.textContent = 'Too high';
-        score -= 1;
-        scoreBox.textContent = score;
-      } else if (guess < secretNumber) {
-        messageBox.textContent = 'Too low';
-        score -= 1;
-        scoreBox.textContent = score;
-      } else {
+      if (guess === secretNumber) {
         messageBox.textContent = 'Correct number!';
         document.querySelector('.number').textContent = secretNumber;
         document.querySelector('body').style.backgroundColor = '#60b347';
         document.querySelector('.number').style.width = '30rem';
+      } else if (guess > secretNumber) {
+        messageBox.textContent = 'Too high';
+        score -= 1;
+        scoreBox.textContent = score;
+      } else {
+        messageBox.textContent = 'Too low';
+        score -= 1;
+        scoreBox.textContent = score;
       }
     } else {
       messageBox.textContent = 'No number';
