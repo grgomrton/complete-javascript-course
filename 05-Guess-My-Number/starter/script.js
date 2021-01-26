@@ -10,6 +10,10 @@ document.querySelector('.btn.again').addEventListener('click', () => {
   score = 20;
   document.querySelector('.message').textContent = 'Start guessing';
   document.querySelector('.score').textContent = score;
+  document.querySelector('.guess').value = '';
+  document.querySelector('.number').textContent = '?';
+  document.querySelector('.number').style.width = '15rem';
+  document.querySelector('body').style.backgroundColor = '#222';
 });
 
 document.querySelector('.btn.check').addEventListener('click', () => {
